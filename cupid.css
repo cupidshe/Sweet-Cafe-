@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ body{
+    background-color:rgb(248, 207, 214);
+    color:rgb(83, 53, 53);
+    font-family: 'Motor4F';
+ }
+
+
+  header{
+    height: 400px;
+    overflow:hidden;
+
+  }
+   
+  header img{
+    width:100%;
+    height: 100%;
+    object-fit:cover;
+    /* maintain its original aspect ratio  when image is resized */
+    opacity: 0.8;
+  }
+
+  #title {
+            font-family: 'Winter Solstice', serif;
+            text-align: center;
+            font-size: 5rem;
+            color: #f83e8cef;
+            margin: 20px 0;
+            text-shadow: 2px 2px 8px rgb(235, 153, 224);
+  }
+
+  nav{
+    background-color: #a1003686;
+padding: 10px;
+text-align: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{display: inline;
+    margin:0 15px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 2rem;
+color: black;
+transition: color 0.3s;
+text-shadow: 0.3s;
+}
+ 
+nav ul li a:hover{
+    color: rgb(190, 29, 137);
+    text-shadow: 0 0 10px red;
+
+}
+
+main {
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section h2{
+    font-family: 'Courier New', Courier, monospace;
+font-size: 3rem;
+text-align:center;
+margin-bottom: 20px;
+color:#140309;
+
+}
+
+.drink-card, .sweet-card{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+}
+
+.drink,.sweet{
+    background-color: rgb(241, 177, 233);
+    border:  2px solid #c03184;
+     border-radius: 10px;
+     padding: 20px;
+     width: 250px;
+     text-align: center;
+     box-shadow:  0 0 15px rgb(248, 126, 201);
+     transition: transform 0.3, box-shadow 0.3s;
+}
+
+.drink:hover, .sweet:hover{
+    transform:scale(1.05);
+    box-shadow: 0 0 25px rgba(224, 112, 149, 0.8);
+
+}
+ 
+.drink img, .sweet img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+
+}
+.drink h3, .sweet h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #31001b;
+        }
+
+        .drink p, .sweet p {
+            margin: 5px 0;
+        }
+
+        form {
+            background-color: hsl(318, 56%, 85%);
+            border: 2px solid #20020c;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 0 15px rgba(161, 0, 53, 0.5);
+        }
+
+        form label {
+            display: block;
+            /*  act as an invisible box */
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #0e0202;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #e996b2;
+            border-radius: 5px;
+            background-color: #f3c3c3;
+            color: #e6e6e6;
+        }
+
+        form input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        form input[type="submit"] {
+            background-color: #db517f;
+            color: #240303;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 5px; 
+            /* transition  tells that "here are my animation rule "*/
+            /*  transform in hover  tells that " here`s what i  want to animate to "*/
+            transition: background-color 0.3s, transform 0.3s;
+             /*   Transition enable animation , background-color as transform color in some sec , transform  changes (like rotate, move ) over some time */
+        } 
+        /* transistion  tells to browser that "hey! if transformer ever changes , animate it */
+
+        form input[type="submit"]:hover {
+            background-color: #f7dde5;
+            transform: scale(1.05);
+             /*  we can  write default instead of scale */
+
+        }
+
+footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #a1003686;
+            margin-top: 40px;
+            font-size: 1rem;
+        }
+
+        footer p {
+            margin: 0;
+            color: #080808;
+        }
+
+
+
+
